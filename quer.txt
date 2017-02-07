@@ -1,0 +1,17 @@
+create table customers (
+ID INT Not null,
+name varchar(20) not null,
+age int not null,
+address char(25),
+salary decimal not null,
+primary key (ID)
+);
+create table orders(
+ID INT Not null,
+ord_date    DATE,
+cutomer_ID  references customers(ID),
+AMOUNT double precision,
+primary key(ID)
+);
+
+http://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver
